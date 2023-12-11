@@ -1,48 +1,107 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Brad's Portfolio</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+
+        <!-- Roboto Font -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500&display=swap"
+        />
+
+        <!-- Custom Styles -->
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #f8f9fa; /* Bootstrap light background color */
+                color: #343a40; /* Bootstrap dark text color */
+                padding: 20px;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: black; /* Bootstrap primary color */
+            }
+
+            .custom-line {
+                width: 100%;
+                border-top: 1px solid black; /* Add the border style */
+                margin: 10px 0; /* Add some margin for spacing */
+            }
+
+            a {
+                color: black; /* Bootstrap primary color */
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+
+            /* Center everything except the last two links */
+            .center-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            /* Give the links some space */
+            a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
     <body>
-        <h1>Brad's Portfolio</h1>
-        <h2>Web Developer Hobbyist</h2>
-        <hr />
-        <a href="./public/movie-ranking.html">
-            <h3>Movie Ranking Project</h3>
-            <img
-                src="./assets/images/movie-ranking.png"
-                alt="movie ranking website"
-                height="250"
-            />
-        </a>
-        <a href="./public/birthday-invite.html">
-            <h3>Birthday Invite Project</h3>
-            <img
-                src="./assets/images/birthday-invite.png"
-                alt="birthday invite website"
-                height="250"
-            />
-        </a>
-        <hr />
+        <div class="center-content">
+            <h1>Brad's Portfolio</h1>
+            <h2>Web Developer Hobbyist</h2>
+            <div class="custom-line"></div>
+
+            <a href="./public/movie-ranking.html">
+                <h3>Movie Ranking Project</h3>
+                <img
+                    src="./assets/images/movie-ranking.png"
+                    alt="movie ranking website"
+                    height="250"
+                    class="img-fluid"
+                />
+            </a>
+
+            <a href="./public/birthday-invite.html">
+                <h3>Birthday Invite Project</h3>
+                <img
+                    src="./assets/images/birthday-invite.png"
+                    alt="birthday invite website"
+                    height="250"
+                    class="img-fluid"
+                />
+            </a>
+
+            <div class="custom-line"></div>
+        </div>
+
         <a href="./public/about.html">About Me</a>
         <a href="./public/contact.html">Contact Me</a>
+
+        <!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
