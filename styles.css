@@ -31,6 +31,13 @@ img {
     height: auto;
 }
 
+/* Main page project images: fixed 250x250 squares */
+.center-content img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
 /* Center everything except the last two links */
 .center-content {
     display: flex;
